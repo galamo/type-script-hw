@@ -60,7 +60,6 @@ for (let index = 0; index < products.length; index++) {
 }
 // console.log(product.getExpirationDate())
 console.log(Product.getHigherPrice(product4, product1111));
-console.log(Product.numberOfProdcuts);
 const Store = [];
 function init() {
     const addProductButton = document.querySelector("#addProductButton");
@@ -80,7 +79,7 @@ function init() {
         });
         product.setExp(new Date(pExpire.value));
         Store.push(product);
-        draw();
+        //  draw()
     });
 }
 init();

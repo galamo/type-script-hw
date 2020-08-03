@@ -1,10 +1,4 @@
-class User {
-    constructor(userName: string,
-        firstName: string,
-        lastName: string,
-        password: string,
-        age: number) { }
-}
+
 
 enum AccountTypes {
     business = "Business",
@@ -71,7 +65,7 @@ class Bank {
 }
 
 const benLeumi = new Bank("Benleumi");
-benLeumi.addAccount(new BankAccount("accountid", 0, [new User("roe", "roe", "roe", "roe", 22)], AccountTypes.private))
+benLeumi.addAccount(new Account("accountid", 0, [], AccountTypes.private))
 
 
 
